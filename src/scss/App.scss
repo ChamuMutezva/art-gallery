@@ -1,0 +1,10 @@
+@use "./base";
+@use "./utils";
+//@use "./components";
+@use "./layout";
+//@use "./pages";
+body {
+    font-family: base.$ft-outfit;
+    background-color: base.$clr-white;
+    color: base.$clr-dark-grey;
+}

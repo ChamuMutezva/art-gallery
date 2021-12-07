@@ -1,0 +1,32 @@
+@use "sass:color";
+@use "./variables";
+@use "../utils";
+
+.container {
+    padding: variables.$spacer-2 variables.$spacer-1;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.heading-h1 {
+    font-size: variables.$fs-60;
+    font-family: variables.$ft-big-shoulders;
+    line-height: 0.95;
+   
+
+    @include utils.mQ(67.5rem) {
+        font-size: variables.$fs-96;
+    }
+}
+
+.content-text {
+    font-size: variables.$fs-18;
+}
