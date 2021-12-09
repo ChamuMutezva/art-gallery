@@ -11,6 +11,13 @@
     width: 80%;
     max-width: 16.25rem;
 
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        outline: dashed base.$clr-orange;
+        outline-offset: 0.25em;
+    }
+
     span {
         background-color: base.$clr-dark-grey;
         padding: base.$spacer-1  base.$spacer-4;

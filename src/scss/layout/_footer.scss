@@ -1,0 +1,43 @@
+@use '../base';
+@use '../utils';
+
+.footer-container {
+    @include utils.mQ(38.75rem) {
+        display: flex;
+        justify-content: space-between;
+    }
+    @include utils.mQ(67.5rem) {
+       max-width: 69.375rem;
+       margin: auto;
+    }
+}
+
+.social-icons {   
+
+    &>* {
+        display: flex;
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    @include utils.mQ(38.75rem) {
+        flex: 1 1 25%;
+
+        &>* {           
+            justify-content: flex-end;           
+        }
+    }
+}
+
+.footer-heading {
+    @include utils.mQ(38.75rem) {
+        flex: 1 1 25%;
+    }
+}
+
+.footer-content {
+    @include utils.mQ(38.75rem) {
+        flex: 1 1 50%;
+        margin: 0;
+    }
+}

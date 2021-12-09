@@ -2,7 +2,12 @@
 @use '../utils';
 
 .main {
-    margin-block-start: base.$spacer-5;
+    margin-block: base.$spacer-5;
+
+    @include utils.mQ(67.5rem) {
+        max-width: 69.375rem;
+        margin: base.$spacer-5 auto;
+    }
 }
 
 .grid1 {
@@ -31,7 +36,7 @@
     }
 }
 
-.sub-content2 {  
+.sub-content2 {
 
     @include utils.mQ(38.75rem) {
         grid-area: 5/4/9/6;

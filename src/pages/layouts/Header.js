@@ -9,26 +9,28 @@ import arrowRight from '../../assets/icon-arrow-right.svg'
 function Header() {
     return (
         <header className="header">
-            <div className="decorative"></div>
-            <div className="hero">
-                <picture>
-                    <source media="(min-width: 1080px)" srcSet={`${heroDesktop}, ${heroDesktop2} 2x`} />
-                    <source media="(min-width: 620px)" srcSet={`${heroTablet}, ${heroTablet2} 2x`} />
-                    <img className="hero-img" src={`${heroMobile}`} alt="" srcSet={`${heroMobile}, ${heroMobile2}`} />
-                </picture>
-            </div>
-            <div className="container main-content">
-                <h1 className="main-heading headings heading-h1 uppercase">Modern Art Gallery</h1>
-                <p className="main-content-text">
-                    The arts in the collection of the Modern Art Gallery all started
-                    from a spark of inspiration. Will these pieces inspire you? Visit
-                    us and find out.
-                </p>
-                <a className="link-btn" href="/">
-                    <span>Our location</span>
-                    <img src={arrowRight} alt="" />
-                </a>
-            </div>
+          
+                <div className="decorative"></div>
+                <div className="hero">
+                    <picture>
+                        <source media="(min-width: 1080px)" srcSet={`${heroDesktop}, ${heroDesktop2} 2x`} />
+                        <source media="(min-width: 620px)" srcSet={`${heroTablet}, ${heroTablet2} 2x`} />
+                        <img className="hero-img" src={`${heroMobile}`} alt="" srcSet={`${heroMobile}, ${heroMobile2}`} />
+                    </picture>
+                </div>
+                <div className="container main-content">
+                    <h1 className="main-heading headings heading-h1 uppercase">Modern Art Gallery</h1>
+                    <p className="main-content-text">
+                        The arts in the collection of the Modern Art Gallery all started
+                        from a spark of inspiration. Will these pieces inspire you? Visit
+                        us and find out.
+                    </p>
+                    <a className="link-btn" href="/">
+                        <span>Our location</span>
+                        <img src={arrowRight} alt="" />
+                    </a>
+                </div>
+           
         </header>
     )
 }
