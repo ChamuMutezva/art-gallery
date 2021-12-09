@@ -18,7 +18,7 @@ function Header() {
                 </picture>
             </div>
             <div className="container main-content">
-                <h1 className="main-heading heading-h1 uppercase">Modern Art Gallery</h1>
+                <h1 className="main-heading headings heading-h1 uppercase">Modern Art Gallery</h1>
                 <p className="main-content-text">
                     The arts in the collection of the Modern Art Gallery all started
                     from a spark of inspiration. Will these pieces inspire you? Visit

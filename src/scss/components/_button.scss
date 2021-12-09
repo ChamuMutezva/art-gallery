@@ -1,0 +1,22 @@
+@use '../base';
+@use '../utils';
+
+.link-btn {
+    font-size: base.$fs-20;
+    background-color: base.$clr-orange;
+    color: base.$clr-white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 80%;
+    max-width: 16.25rem;
+
+    span {
+        background-color: base.$clr-dark-grey;
+        padding: base.$spacer-1  base.$spacer-4;
+    }
+
+    img {
+        padding: base.$spacer-1;
+    }
+}

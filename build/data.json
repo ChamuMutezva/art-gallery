@@ -4,23 +4,20 @@
         "name": "grid1",
         "mobile": ["../assets/mobile/image-grid-1.jpg", "../assets/mobile/image-grid-1@2x.jpg"],
         "tablet": ["../assets/tablet/image-grid-1.jpg", "../assets/tablet/image-grid-1@2x.jpg"],
-        "desktop": ["../assets/desktop/image-grid-1.jpg", "../assets/desktop/image-grid-1@2x.jpg"],
-        "content": "the gallery show room, with magnificent artwork on the wall"
+        "desktop": ["../assets/desktop/image-grid-1.jpg", "../assets/desktop/image-grid-1@2x.jpg"]
     },
     {
         "id": 2,
         "name": "grid2",
         "mobile": ["../assets/mobile/image-grid-2.jpg", "../assets/mobile/image-grid-2@2x.jpg"],
         "tablet": ["../assets/tablet/image-grid-2.jpg", "../assets/tablet/image-grid-2@2x.jpg"],
-        "desktop": ["../assets/desktop/image-grid-2.jpg", "../assets/desktop/image-grid-2@2x.jpg"],
-        "content": "watch in style , sitting on a wooden bench"
+        "desktop": ["../assets/desktop/image-grid-2.jpg", "../assets/desktop/image-grid-2@2x.jpg"]
     },
     {
         "id": 3,
         "name": "grid3",
         "mobile": ["../assets/mobile/image-grid-3.jpg", "../assets/mobile/image-grid-3@2x.jpg"],
         "tablet": ["../assets/tablet/image-grid-3.jpg", "../assets/tablet/image-grid-3@2x.jpg"],
-        "desktop": ["../assets/desktop/image-grid-3.jpg", "../assets/desktop/image-grid-3@2x.jpg"],
-        "content": "people viewing the artwork in the gallery"
+        "desktop": ["../assets/desktop/image-grid-3.jpg", "../assets/desktop/image-grid-3@2x.jpg"]
     }
 ]

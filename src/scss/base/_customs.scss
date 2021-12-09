@@ -6,25 +6,55 @@
     padding: variables.$spacer-2 variables.$spacer-1;
 }
 
+.inner-container {
+    padding: variables.$spacer-4 variables.$spacer-2;
+}
+
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: variables.$spacer-2;
+
+    @include utils.mQ(38.75rem) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
 .uppercase {
     text-transform: uppercase;
 }
 
-.heading-h1 {
-    font-size: variables.$fs-60;
+.black-bg {
+    background-color:variables.$clr-dark-grey;
+    color: variables.$clr-white;
+}
+
+.headings {
     font-family: variables.$ft-big-shoulders;
     line-height: 0.95;
-   
+    font-weight: variables.$fw-black;
+}
+
+.heading-h1 {
+    font-size: variables.$fs-60;  
 
     @include utils.mQ(67.5rem) {
         font-size: variables.$fs-96;
     }
+}
+
+.heading-h2 {
+    font-size: variables.$fs-50;
+}
+
+.heading-h3 {
+    font-size: variables.$fs-24;
 }
 
 .content-text {
