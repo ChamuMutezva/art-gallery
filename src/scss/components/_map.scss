@@ -1,0 +1,9 @@
+@use '../base';
+@use '../utils';
+
+#map {
+    height: 11.25rem;
+    .leaf-container {
+        height: 100%;
+    }
+}

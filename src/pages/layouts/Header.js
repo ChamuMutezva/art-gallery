@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroMobile from '../../assets/mobile/image-hero.jpg'
 import heroMobile2 from '../../assets/mobile/image-hero@2x.jpg'
 import heroTablet from '../../assets/tablet/image-hero.jpg'
@@ -25,10 +26,10 @@ function Header() {
                         from a spark of inspiration. Will these pieces inspire you? Visit
                         us and find out.
                     </p>
-                    <a className="link-btn" href="/">
+                    <Link to="Location" className="link-btn">
                         <span>Our location</span>
                         <img src={arrowRight} alt="" />
-                    </a>
+                    </Link>
                 </div>
            
         </header>
