@@ -21,25 +21,25 @@ function Location() {
 
         return position === null ? null : (
             <Marker position={position}>
-                <Popup>You are here</Popup>
+                <Popup>You are here!</Popup>
             </Marker>
         )
     }
 
 
     return (
-        <div className="location">
+        <div className="location" tabIndex={-1}>
             <h1 className='sr-only'>Modern art gallery location centers </h1>
             <div className="map">
                 <LinkBtn to="/" src={ArrowLeft} text="Back to home" mapBtn={true} />
-                <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{ height: "34.375rem" }}>
+                <MapContainer center={position} zoom={13} scrollWheelZoom={false} >
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
-                    <Marker position={position}>
+                    <Marker position={position}>                      
                         <Popup>
-                            A pretty CSS3 popup. <br /> Easily customizable.
+                            You are here.
                         </Popup>
                     </Marker>
                     <LocationMarker />

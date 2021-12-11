@@ -9,8 +9,14 @@
 .map {
     position: relative;
 
-    .leaf-container {
-        height: 100%;
+    .leaflet-container {
+        height: 34.375rem;
+    }
+
+    @include utils.mQ(38.75rem) {
+        .leaflet-container {
+            height: 37.5rem;
+        }
     }
 }
 
@@ -45,7 +51,7 @@
 
     @include utils.mQ(38.75rem) {
         flex: 1 1 30%;
-
+        font-size: base.$fs-55;
     }
 
     @include utils.mQ(67.5rem) {
@@ -74,7 +80,7 @@
     font-size: base.$fs-18;
     max-width: 33.75rem;
 
-    @include utils.mQ(38.75rem) {
+    @include utils.mQ(67.5rem) {
         font-size: base.$fs-22;
     }
 }
@@ -93,13 +99,6 @@
         max-width: 33.75rem;
     }
 
-    @include utils.mQ(38.75rem) {
-
-        &>span {
-            font-size: base.$fs-22;
-        }
-
-    }
 
     @include utils.mQ(67.5rem) {
 
@@ -110,11 +109,3 @@
     }
 }
 
-.location-footer {
-    background-color: base.$clr-orange;
-    color: base.$clr-dark-grey;
-
-    a {
-        filter: invert(100%) sepia(4%) saturate(100%) hue-rotate(3deg) brightness(100%) contrast(100%);
-    }
-}
