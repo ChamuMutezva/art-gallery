@@ -2,9 +2,10 @@ import { ReactComponent as Facebook } from "../../assets/icon-facebook.svg"
 import { ReactComponent as Instagram } from "../../assets/icon-instagram.svg"
 import { ReactComponent as Twitter } from "../../assets/icon-twitter.svg"
 
-function Footer() {
+function Footer(props) {
+    const footerMap = props.locationFooter ? "location-footer" : ""
     return (
-        <footer className="container black-bg footer">
+        <footer className={`container black-bg footer ${footerMap}`}>
             <div className="footer-container">
                 <h3 className="headings uppercase heading-h3 footer-heading">Modern Art <br /> Gallery</h3>
 

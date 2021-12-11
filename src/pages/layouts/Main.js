@@ -1,12 +1,4 @@
 import { useContext } from "react"
-/*
-import imgGridMobileOne from "../../assets/mobile/image-grid-1.jpg"
-import imgGridMobileOne2x from "../../assets/mobile/image-grid-1@2x.jpg"
-import imgGridMobileTwo from "../../assets/mobile/image-grid-2.jpg"
-import imgGridMobileTwo2x from "../../assets/mobile/image-grid-2@2x.jpg"
-import imgGridMobileThree from "../../assets/mobile/image-grid-3.jpg"
-import imgGridMobileThree2x from "../../assets/mobile/image-grid-3@2x.jpg"
-*/
 import { DataContext } from "../../context/DataContext"
 
 function Main() {
@@ -36,7 +28,7 @@ function Main() {
                 <div className="container inner-container">
                     <h2 className="headings heading-h2 uppercase">Come &amp; be inspired</h2>
                     <p className="main-content-text">
-                        We’re excited to welcome you to our gallery and see how our collections
+                        We're excited to welcome you to our gallery and see how our collections
                         influence you.
                     </p>
                 </div>

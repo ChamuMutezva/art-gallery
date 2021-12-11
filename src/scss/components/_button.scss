@@ -1,3 +1,4 @@
+@use 'sass:math';
 @use '../base';
 @use '../utils';
 
@@ -20,10 +21,25 @@
 
     span {
         background-color: base.$clr-dark-grey;
-        padding: base.$spacer-1  base.$spacer-4;
+        //  padding: base.$spacer-1  base.$spacer-4;      
+        flex: 1 1 80%;
+        text-align: center;
+        padding: math.div(base.$spacer-1, 2);
     }
 
-    img {
-        padding: base.$spacer-1;
-    }
+}
+
+.link-img-wrapper {
+    flex: 1 1 20%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.btn-absolute {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    flex-direction: row-reverse;
 }

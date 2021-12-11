@@ -1,9 +1,120 @@
+@use 'sass:math';
 @use '../base';
 @use '../utils';
 
-#map {
-    height: 11.25rem;
+.location {
+    min-height: 100vh;
+}
+
+.map {
+    position: relative;
+
     .leaf-container {
         height: 100%;
+    }
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    gap: base.$spacer-1;
+
+    @include utils.mQ(38.75rem) {
+        flex: 1 1 80%;
+    }
+}
+
+
+.location-address-wrapper {
+    padding-block: base.$spacer-4;
+
+    @include utils.mQ(38.75rem) {
+        display: flex;
+        gap: base.$spacer-4;
+        justify-content: space-between;
+        max-width: 69.375rem;
+        margin: auto;
+    }
+}
+
+.location-address-heading {
+    font-size: base.$fs-50;
+    // margin-block-start: base.$spacer-1 * 1.25;
+    margin-block-end: base.$spacer-4;
+
+    @include utils.mQ(38.75rem) {
+        flex: 1 1 30%;
+
+    }
+
+    @include utils.mQ(67.5rem) {
+        font-size: base.$fs-70;
+    }
+}
+
+.street {
+    font-size: base.$fs-32;
+    color: base.$clr-orange;
+
+    @include utils.mQ(38.75rem) {
+        // font-size: base.$fs-36;
+
+
+    }
+
+    @include utils.mQ(67.5rem) {
+        font-size: base.$fs-36;
+    }
+
+}
+
+
+.address-text {
+    font-size: base.$fs-18;
+    max-width: 33.75rem;
+
+    @include utils.mQ(38.75rem) {
+        font-size: base.$fs-22;
+    }
+}
+
+.address-details {
+    display: flex;
+    flex-direction: column;
+    gap: math.div(base.$spacer-1, 4);
+
+    &>span {
+        font-size: base.$fs-18;
+    }
+
+    &>p {
+        font-size: base.$fs-18;
+        max-width: 33.75rem;
+    }
+
+    @include utils.mQ(38.75rem) {
+
+        &>span {
+            font-size: base.$fs-22;
+        }
+
+    }
+
+    @include utils.mQ(67.5rem) {
+
+        &>span {
+            font-size: base.$fs-22;
+        }
+
+    }
+}
+
+.location-footer {
+    background-color: base.$clr-orange;
+    color: base.$clr-dark-grey;
+
+    a {
+        filter: invert(100%) sepia(4%) saturate(100%) hue-rotate(3deg) brightness(100%) contrast(100%);
     }
 }

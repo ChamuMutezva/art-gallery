@@ -5,11 +5,13 @@
     @include utils.mQ(38.75rem) {
         display: flex;
         justify-content: space-between;
+        max-width: 69.375rem;
+        margin: auto;
     }
-    @include utils.mQ(67.5rem) {
+  /*  @include utils.mQ(67.5rem) {
        max-width: 69.375rem;
        margin: auto;
-    }
+    }*/
 }
 
 .social-icons {   
