@@ -6,9 +6,10 @@ import ArrowLeft from '../assets/icon-arrow-left.svg'
 
 
 function Location() {
-    const position = [51.505, -0.09]
+    // const position = [51.505, -0.09]
+    const [position, setPosition] = useState([51.505, -0.09])
     function LocationMarker() {
-        const [position, setPosition] = useState(null)
+
         const map = useMapEvents({
             click() {
                 map.locate()
@@ -37,7 +38,7 @@ function Location() {
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
-                    <Marker position={position}>                      
+                    <Marker position={position}>
                         <Popup>
                             You are here.
                         </Popup>
