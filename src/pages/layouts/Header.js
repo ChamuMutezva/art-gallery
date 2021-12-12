@@ -16,7 +16,7 @@ function Header() {
                     <picture>
                         <source media="(min-width: 1080px)" srcSet={`${heroDesktop}, ${heroDesktop2} 2x`} />
                         <source media="(min-width: 620px)" srcSet={`${heroTablet}, ${heroTablet2} 2x`} />
-                        <img className="hero-img" src={`${heroMobile}`} alt="" srcSet={`${heroMobile}, ${heroMobile2}`} />
+                        <img className="hero-img" src={`${heroMobile}`} alt="" srcSet={`${heroMobile2} 2x`} />
                     </picture>
                 </div>
                 <div className="container main-content">
