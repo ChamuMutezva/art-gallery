@@ -10,7 +10,7 @@
     }
 
     @include utils.mQ(67.5rem) {
-        grid-template-columns: 3fr 4fr 2fr;
+        grid-template-columns: 5fr 6fr 5fr;
         max-width: 90rem;
         margin: auto;
     }
@@ -28,6 +28,10 @@
         justify-content: center;
         margin-inline-start: -3.8rem;
     }
+    @include utils.mQ(67.5rem) { 
+        margin-top: -15rem;
+    }
+
 }
 
 .decorative {
@@ -40,7 +44,7 @@
 
     @include utils.mQ(67.5rem) {
         position: absolute;
-        left: 13.5%;
+        left: 11.5%;
         color: base.$clr-white;
         mix-blend-mode: difference;
     }
@@ -50,10 +54,16 @@
     font-size: base.$fs-18;
     font-weight: base.$fw-light;
     margin-block: base.$spacer-2;
+
+    @include utils.mQ(67.5rem) {
+        font-size: base.$fs-22;
+        max-width: 22rem;
+    }
 }
 
 
 .hero-img {
     width: 100%;
     object-fit: cover;
+    max-height: 50rem;
 }
