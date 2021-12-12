@@ -41,7 +41,7 @@
     @include utils.mQ(67.5rem) {
         position: absolute;
         left: 13.5%;
-        color: white;
+        color: base.$clr-white;
         mix-blend-mode: difference;
     }
 }

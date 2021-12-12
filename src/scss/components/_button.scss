@@ -20,11 +20,16 @@
     }
 
     span {
-        background-color: base.$clr-dark-grey;
-        //  padding: base.$spacer-1  base.$spacer-4;      
+        background-color: base.$clr-dark-grey;         
         flex: 1 1 80%;
         text-align: center;
         padding: math.div(base.$spacer-1, 2);
+    }
+
+    @include utils.mQ(67.5rem) {
+        span {           
+            padding: base.$spacer-1;
+        }
     }
 
 }

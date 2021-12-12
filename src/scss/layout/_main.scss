@@ -20,7 +20,7 @@
 
 .sub-content1 {
     @include utils.mQ(38.75rem) {
-        grid-area: 1/1/4/3; // 1/1/2/3;
+        grid-area: 1/1/4/3; 
     }
 }
 

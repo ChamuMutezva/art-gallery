@@ -45,8 +45,7 @@
 }
 
 .location-address-heading {
-    font-size: base.$fs-50;
-    // margin-block-start: base.$spacer-1 * 1.25;
+    font-size: base.$fs-50;  
     margin-block-end: base.$spacer-4;
 
     @include utils.mQ(38.75rem) {
@@ -62,12 +61,6 @@
 .street {
     font-size: base.$fs-32;
     color: base.$clr-orange;
-
-    @include utils.mQ(38.75rem) {
-        // font-size: base.$fs-36;
-
-
-    }
 
     @include utils.mQ(67.5rem) {
         font-size: base.$fs-36;
