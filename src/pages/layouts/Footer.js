@@ -17,18 +17,18 @@ function Footer(props) {
 
                     <ul className="social-icons-list">
                         <li>
-                            <a href="/" aria-label="visit our facebook page" >
-                                <Facebook title="facebook page" className="social-item facebook" aria-hidden="true" />
+                            <a href="/" className="social-item" aria-label="visit our facebook page" >
+                                <Facebook title="facebook page" className="facebook" aria-hidden="true" />
                             </a>
                         </li>
                         <li>
-                            <a href="/" aria-label="visit our instagram page" >
-                                <Instagram title="instagram" className="social-item instagram" />
+                            <a href="/" className="social-item" aria-label="visit our instagram page" >
+                                <Instagram title="instagram" className="instagram" aria-hidden={true} />
                             </a>
                         </li>
                         <li>
-                            <a href="/" aria-label="visit our twitter page">
-                                <Twitter title="twitter" className="social-item twitter" />
+                            <a href="/" className="social-item" aria-label="visit our twitter page">
+                                <Twitter title="twitter" className="twitter" aria-hidden={true}/>
                             </a>
                         </li>
                     </ul>

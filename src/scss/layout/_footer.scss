@@ -29,11 +29,14 @@
 }
 
 .social-item {
+
     &:hover,
     &:focus {
-        cursor: pointer;
-        outline: dashed currentColor;
-        outline-offset: 0.25em;
+        
+            cursor: pointer;
+            outline: dashed currentColor;
+            outline-offset: 0.25em;
+        
     }
 }
 
@@ -42,7 +45,7 @@
     color: base.$clr-dark-grey;
 
     a {
-        filter: invert(100%) sepia(4%) saturate(100%) hue-rotate(3deg) brightness(100%) contrast(100%);      
+        filter: invert(100%) sepia(4%) saturate(100%) hue-rotate(3deg) brightness(100%) contrast(100%);
     }
 }
 
