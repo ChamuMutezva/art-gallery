@@ -19,7 +19,7 @@ function Main() {
                 return <picture key={image.id} className={`${image.name}`}>
                     <source media="(min-width: 1080px)" srcSet={`${image.desktop[0]}, ${image.desktop[1]} 2x`} />
                     <source media="(min-width: 620px)" srcSet={`${image.tablet[0]}, ${image.tablet[1]} 2x`} />
-                    <img className="hero-img" src={`${image.mobile[0]}`} alt={image.content} srcSet={`${image.mobile[0]}, ${image.mobile[1]}`} />
+                    <img className="hero-img" src={`${image.mobile[0]}`} alt={image.content} srcSet={`${image.mobile[1]} 2x`} />
 
                 </picture>
             })}
