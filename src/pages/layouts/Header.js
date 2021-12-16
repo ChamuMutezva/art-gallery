@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+ //import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import heroMobile from '../../assets/mobile/image-hero.jpg'
 import heroMobile2 from '../../assets/mobile/image-hero@2x.jpg'
 import heroTablet from '../../assets/tablet/image-hero.jpg'
