@@ -1,4 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { MapContainer, TileLayer, useMapEvents, Marker, Popup } from 'react-leaflet'
 import LinkBtn from '../components/LinkBtn'
 import Footer from './layouts/Footer'
@@ -6,7 +8,10 @@ import ArrowLeft from '../assets/icon-arrow-left.svg'
 
 
 function Location() {
-    // const position = [51.505, -0.09]
+
+    gsap.registerPlugin(ScrollTrigger)
+    const textRef = useRef(null)
+
     const [position, setPosition] = useState([51.505, -0.09])
     function LocationMarker() {
 
@@ -26,6 +31,27 @@ function Location() {
             </Marker>
         )
     }
+
+    useEffect(() => {   
+
+        gsap.fromTo(textRef.current,
+            {
+                autoAlpha: 0,
+            },
+            {
+                autoAlpha: 1,
+                scrollTrigger: {
+                    trigger: textRef.current,
+                    toggleActions: "play none none reverse",
+                    start: "top bottom",
+                    scrub: true,
+                   
+                }
+            }
+
+        )
+        
+    })
 
 
     return (
@@ -48,7 +74,7 @@ function Location() {
             </div>
             <div className="location-address black-bg container">
                 <div className="location-address-wrapper">
-                    <h2 className="location-address-heading uppercase headings">Our location</h2>
+                    <h2 className="location-address-heading uppercase headings" ref={textRef}>Our location</h2>
                     <address className="address">
                         <h3 className="street uppercase headings">99 King Street</h3>
                         <span className="address-details">
