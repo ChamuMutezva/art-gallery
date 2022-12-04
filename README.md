@@ -37,6 +37,7 @@ Users should be able to:
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://art-gallery-chamu.netlify.app)
+- aws live site url: [AWS LIVE SITE URL](https://master.dn9hq5jjohwet.amplifyapp.com/)
 
 ## My process
 
